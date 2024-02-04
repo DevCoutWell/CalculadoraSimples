@@ -9,26 +9,29 @@
 <body>
     <div class="conteiner">
 
-        <p class="display"> 12,9 </p>
+        <p class="display"></p>
 
-        <button class="gray-button">ac</button>
-        <button class="gray-button">+/-</button>
-        <button class="blue-button">/</button>
-        <button class="blue-button">*</button>
-        <button class="black-button">7</button>
-        <button class="black-button">8</button>
-        <button class="black-button">9</button>
-        <button class="blue-button">-</button>
-        <button class="black-button">4</button>
-        <button class="black-button">5</button>
-        <button class="black-button">6</button>
-        <button class="blue-button">+</button>
-        <button class="black-button">1</button>
-        <button class="black-button">2</button>
-        <button class="black-button">3</button>
-        <button class="equal-button">=</button>
-        <button class="black-button zero-button">0</button>
-        <button class="black-button">.</button>
+        <button class="gray-button" onclick="limparDisplay()">ac</button>
+        <button class="gray-button" onclick="inverterValor()">+/-</button>
+        <button class="blue-button" onclick="addCaracter('/')">/</button>
+        <button class="blue-button" onclick="addCaracter('*')">*</button>
+        <button class="black-button" onclick="addCaracter('7')">7</button>
+        <button class="black-button" onclick="addCaracter('8')">8</button>
+        <button class="black-button" onclick="addCaracter('9')">9</button>
+        <button class="blue-button" onclick="addCaracter('-')">-</button>
+        <button class="black-button" onclick="addCaracter('4')">4</button>
+        <button class="black-button" onclick="addCaracter('5')">5</button>
+        <button class="black-button" onclick="addCaracter('6')">6</button>
+        <button class="blue-button" onclick="addCaracter('+')">+</button>
+        <button class="black-button" onclick="addCaracter('1')">1</button>
+        <button class="black-button" onclick="addCaracter('2')">2</button>
+        <button class="black-button" onclick="addCaracter('3')">3</button>
+        <button class="equal-button" >=</button>
+        <button class="black-button zero-button" onclick="addCaracter('0')" >0</button>
+        <button class="black-button" onclick="addCaracter('.')">.</button>
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
