@@ -1,30 +1,32 @@
-const display = document.querySelector(".display");
+let display = document.querySelector(".display");
 
-let valorDisplay = display.textContent;
-
-
+display.disabled = true;
 
 
+function addCaracter(caracter) {
 
-
-function addCaracter(caracter){
-
-    
-    
-
-    valorDisplay = valorDisplay + caracter;
-    
+     display.value = display.value + caracter;
 
 };
 
-function limparDisplay(){
+function limparDisplay() {
 
-    valorDisplay = "";
+    display.value = "";
+
+};
+
+function inverterValor() {
+
+    display.value = display.value * (-1);
 
 };
 
-function inverterValor(){
 
-    valorDisplay = valorDisplay * (-1);
+function calcular() {
+
+   display.value = eval(display.value);
+
 
 };
+
+
